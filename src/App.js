@@ -1,14 +1,25 @@
 import React from 'react';
-import logo from './3.png';
+// librerias de transacc
+//import { CSSTransition, TransitionGroup } from 'react-transition-group';
+//
 import './App.css';
+import Menu from './componentes/menu/Menu';
+import Footer from './componentes/footer/Footer';
+import Rutas from './rutas/Rutas';
+//Inicio Impotar las paginas
+//import Inicio from './componentes/vistas/inicio/Inicio';
+//import Contacto from './componentes/vistas/contacto/Contacto';
+//import Galeria from './componentes/vistas/galeria/Galeria';
+
+//Fin Impotar las paginas
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        
-      </header>
+    <div >
+      <Menu />
+       <Rutas />
+
+      <Footer />
     </div>
   );
 }
