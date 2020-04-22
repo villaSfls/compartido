@@ -1,4 +1,4 @@
-import React, { Component} from 'react';
+import React, { Component } from 'react';
 import {
     BrowserRouter as Router,
     Switch,
@@ -13,29 +13,26 @@ import Contacto from '../componentes/vistas/contacto/Contacto';
 import Menu from '../componentes/menu/Menu';
 import Footer from '../componentes/footer/Footer';
 
-class Rutas extends Component{
-    constructor(props) {
-        super(props);
-        this.state={}
-}
+class Rutas extends Component {
 
- render() {
-     return(
- 
-    <div>
-        <Router>
-            <Menu />
-            <Switch>
-                <Route Path='/' exact children ={<Inicio />} />
-  	             <Route Path='/galeria'  children ={<Galeria />} />
-                   <Route Path='/contacto'  children ={<Contacto />} />
-            </Switch>
-	    	<Footer />
-        </Router>     
-    </div>
 
-    );
-}
+    render() {
+        return (
+
+            <div>
+                <Router>
+                    <Menu />
+                    <Switch>
+                        <Route path="/" exact children={<Inicio />} />
+                        <Route path="/galeria" children={<Galeria />} />
+                        <Route path="/contacto" children={<Contacto />} />
+                    </Switch>
+                    <Footer />
+                </Router>
+            </div>
+
+        );
+    }
 }
 
 export default Rutas;

@@ -8,7 +8,7 @@ import Rutas from "./rutas/Rutas";
 
 ReactDOM.render(
   <React.StrictMode>
-   <Rutas>
+    <Rutas>
       <App />
     </Rutas>
   </React.StrictMode>,
